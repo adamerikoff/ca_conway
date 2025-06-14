@@ -1,7 +1,6 @@
 # **ca_conway**  
-**Eine Ruby-Implementierung von Conways "Spiel des Lebens" (Game of Life)**  
 
------
+**Eine Ruby-Implementierung von Conways "Spiel des Lebens" (Game of Life)**  
 
 ### **Inhaltsverzeichnis**
 
@@ -86,5 +85,3 @@ Um dieses Projekt auszuführen, benötigen Sie **Ruby** und die **Gosu-Bibliothe
   * [Conways Spiel des Lebens (Wikipedia)](https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens)
   * [Ruby-Programmiersprache](https://www.ruby-lang.org/)
   * [Gosu (2D Game Development Library)](https://www.libgosu.org/)
-
------
