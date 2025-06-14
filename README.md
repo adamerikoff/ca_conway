@@ -1,41 +1,80 @@
-# **ca_conway**  
-**Eine Ruby-Implementierung von Conways "Spiel des Lebens" (Game of Life)**  
+Here's an improved version of your German README, focusing on clarity, flow, and slightly more engaging language, while maintaining all the essential information.
 
-📌 **Ein zellulärer Automat nach den Regeln von John Horton Conway** – simuliert evolutionäre Muster durch einfache Nachbarschaftsregeln.  
+-----
 
-🔗 **Referenzen:**  
-- [Conways Spiel des Lebens (Wikipedia)](https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens)  
-- [Ruby-Programmiersprache](https://www.ruby-lang.org/)  
+# **ca\_conway**
 
----
+## Eine Ruby-Implementierung von Conways "Spiel des Lebens"
 
-### **Funktionsweise**  
-Das Programm modelliert ein 2D-Gitter von Zellen, die lebendig (`#`) oder tot (`.`) sein können. Jede Generation berechnet sich nach Conways klassischen Regeln:  
-1. **Überleben:** Eine lebende Zelle mit 2 oder 3 Nachbarn bleibt am Leben.  
-2. **Sterben:** Eine lebende Zelle mit weniger als 2 oder mehr als 3 Nachbarn stirbt.  
-3. **Geburt:** Eine tote Zelle mit genau 3 Nachbarn wird lebendig.  
+-----
 
----
+### **Projektübersicht**
 
-### **Features**  
-- **Ruby-optimierte Logik** (nutzt z. B. `Array`-Manipulationen für effiziente Nachbarschaftsprüfungen).  
-- **Kommandozeilen-Interface (CLI)** zur interaktiven Steuerung (Start/Pause/Reset).  
-- **Anpassbare Grid-Größen** und Startmuster (z. B. Gleiter, Blinker, zufällige Besiedlung).  
+**ca\_conway** ist eine dynamische Ruby-Implementierung von John Horton Conways berühmtem "Spiel des Lebens". Dieses faszinierende **zelluläre Automaten-System** simuliert die Entstehung komplexer evolutionärer Muster auf einem 2D-Gitter, basierend auf einfachen Nachbarschaftsregeln. Beobachten Sie, wie Leben entsteht, gedeiht und vergeht\!
 
----
+-----
 
-### **Screenshots** *(Beispielplatzhalter – füge eigene Bilder ein!)*  
-| ![Startgeneration](https://via.placeholder.com/300x200/222/fff?text=Initial+Grid) | ![Evolution](https://via.placeholder.com/300x200/222/fff?text=Generation+5) |  
-|:--:|:--:|  
-| *Startkonfiguration* | *Muster nach 5 Generationen* |  
+### **Grundlagen des Spiels**
 
----
+Das "Spiel des Lebens" basiert auf einem Gitter von Zellen, die entweder **lebendig** (dargestellt als weiß) oder **tot** (dargestellt als schwarz) sein können. Jede neue Generation wird gemäß drei grundlegenden Regeln berechnet:
 
-### **Installation & Nutzung**  
-```bash
-git clone https://github.com/dein-username/ca_conway.git  
-cd ca_conway  
-run.sh start 
-```  
+1.  **Überleben:** Eine lebende Zelle mit genau 2 oder 3 lebenden Nachbarn bleibt am Leben.
+2.  **Sterben:** Eine lebende Zelle stirbt, wenn sie weniger als 2 lebende Nachbarn hat (Unterbevölkerung) oder mehr als 3 lebende Nachbarn hat (Überbevölkerung).
+3.  **Geburt:** Eine tote Zelle wird lebendig, wenn sie genau 3 lebende Nachbarn hat.
 
----
+-----
+
+### **Features**
+
+  * **Interaktive grafische Benutzeroberfläche (GUI):** Dank der Gosu-Bibliothek wird das Spielgeschehen in Echtzeit visualisiert.
+  * **Toroidale Topologie (Wrap-around-Ränder):** Das Spielfeld ist wie ein Donut geformt. Zellen, die einen Rand verlassen, erscheinen am gegenüberliegenden Rand wieder. Dies ermöglicht die unendliche Bewegung von Mustern wie Gleitern.
+  * **Anpassbare Simulationsgeschwindigkeit:** Steuern Sie, wie schnell sich die Generationen entwickeln, um Muster genauer zu beobachten.
+  * **Echtzeit-Informationen:** Die aktuelle **Generationsnummer** und die **Anzahl der lebenden Zellen** werden kontinuierlich in der oberen linken Ecke angezeigt.
+  * **Manuelle Zellsteuerung:** Klicken Sie mit der Maus auf eine Zelle, um ihren Zustand (lebendig/tot) jederzeit direkt zu ändern.
+  * **Flexible Konfiguration:** Passen Sie die **Gittergröße** an und wählen Sie verschiedene **Startmuster** (z. B. zufällige Besiedlung).
+
+-----
+
+### **Screenshots**
+
+-----
+
+### **Installation & Nutzung**
+
+Um **ca\_conway** auszuführen, benötigen Sie **Ruby** und die **Gosu-Bibliothek**.
+
+1.  **Repository klonen:**
+
+    ```bash
+    git clone https://github.com/dein-username/ca_conway.git
+    cd ca_conway
+    ```
+
+2.  **Gosu installieren:** Falls Gosu noch nicht auf Ihrem System installiert ist, tun Sie dies über RubyGems:
+
+    ```bash
+    gem install gosu
+    ```
+
+3.  **Simulation starten:**
+
+    ```bash
+    ./run.sh start
+    ```
+
+    *Hinweis: Stellen Sie sicher, dass sich `game_of_life.rb`, `Cell.rb` und `World.rb` im selben Verzeichnis befinden und die Datei `run.sh` ausführbar ist (falls nicht, führen Sie `chmod +x run.sh` aus).*
+
+-----
+
+### **Steuerung während der Simulation**
+
+  * **Mausklick:** Klicken Sie auf eine Zelle, um ihren Zustand (`lebendig` / `tot`) umzuschalten.
+  * **ESC-Taste:** Beendet die Anwendung.
+
+-----
+
+### **Referenzen**
+
+  * [Conways Spiel des Lebens (Wikipedia)](https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens)
+  * [Ruby-Programmiersprache](https://www.ruby-lang.org/)
+  * [Gosu (2D Game Development Library)](https://www.libgosu.org/)
