@@ -1,27 +1,27 @@
-# **ca_conway** 
-**Eine Ruby-Implementierung von Conways "Spiel des Lebens" (Game of Life)** 
+# **ca_conway**  
+**Eine Ruby-Implementierung von Conways "Spiel des Lebens" (Game of Life)**  
 
 -----
 
 ### **Inhaltsverzeichnis**
 
-  * [Projektübersicht](https://www.google.com/search?q=%23projekt%C3%BCbersicht)
-  * [Funktionsweise](https://www.google.com/search?q=%23funktionsweise)
-  * [Aktuelle Features](https://www.google.com/search?q=%23aktuelle-features)
-  * [Screenshots](https://www.google.com/search?q=%23screenshots)
-  * [Installation & Nutzung](https://www.google.com/search?q=%23installation--nutzung)
-  * [Steuerung während der Simulation](https://www.google.com/search?q=%23steuerung-w%C3%A4hrend-der-simulation)
-  * [Referenzen](https://www.google.com/search?q=%23referenzen)
+  * [Projektübersicht](#projektübersicht)
+  * [Funktionsweise](#funktionsweise)
+  * [Aktuelle Features](#aktuelle-features)
+  * [Screenshots](#screenshots)
+  * [Installation & Nutzung](#installation--nutzung)
+  * [Steuerung während der Simulation](#steuerung-während-der-simulation)
+  * [Referenzen](#referenzen)
 
 -----
 
-### **Projektübersicht**
+### **Projektübersicht** <a id="projektübersicht"></a>
 
-**ca_conway** ist eine dynamische Ruby-Implementierung von John Horton Conways berühmtem "Spiel des Lebens". Dieses faszinierende **zelluläre Automaten-System** simuliert die Entstehung komplexer evolutionärer Muster auf einem 2D-Gitter, basierend auf einfachen Nachbarschaftsregeln. Beobachten Sie, wie Leben entsteht, gedeiht und vergeht\!
+**ca_conway** ist eine dynamische Ruby-Implementierung von John Horton Conways berühmtem "Spiel des Lebens". Dieses faszinierende **zelluläre Automaten-System** simuliert die Entstehung komplexer evolutionärer Muster auf einem 2D-Gitter, basierend auf einfachen Nachbarschaftsregeln. Beobachten Sie, wie Leben entsteht, gedeiht und vergeht!
 
 -----
 
-### **Funktionsweise** 
+### **Funktionsweise** <a id="funktionsweise"></a>
 Das Programm modelliert ein 2D-Gitter von Zellen, die lebendig (`weiß`) oder tot (`schwarz`) sein können. Jede Generation berechnet sich nach Conways klassischen Regeln:
 
 1.  **Überleben:** Eine lebende Zelle mit 2 oder 3 lebenden Nachbarn bleibt am Leben.
@@ -30,7 +30,7 @@ Das Programm modelliert ein 2D-Gitter von Zellen, die lebendig (`weiß`) oder to
 
 -----
 
-### **Aktuelle Features** 
+### **Aktuelle Features** <a id="aktuelle-features"></a>
 
 * **Grafische Benutzeroberfläche (GUI) mit Gosu:** Visualisiert das Gitter in Echtzeit.
 * **Toroidale Topologie (Wrap-around-Ränder):** Das Spielfeld ist wie ein Donut geformt – Zellen, die den oberen Rand verlassen, erscheinen unten wieder, und dasselbe gilt für links/rechts. Dies ermöglicht unendliche Bewegungen von Mustern wie Gleitern.
@@ -41,20 +41,20 @@ Das Programm modelliert ein 2D-Gitter von Zellen, die lebendig (`weiß`) oder to
 
 -----
 
-### **Screenshots**
-![Alt text](img/1.png)
+### **Screenshots** <a id="screenshots"></a>
+![Alt text](img/1.png)  
 ![Alt text](img/2.png)
 
 -----
 
-### **Installation & Nutzung** 
+### **Installation & Nutzung** <a id="installation--nutzung"></a>
 
 Um dieses Projekt auszuführen, benötigen Sie **Ruby** und die **Gosu-Bibliothek**.
 
 1.  **Klonen Sie das Repository:**
 
     ```bash
-    git clone [https://github.com/dein-username/ca_conway.git](https://github.com/dein-username/ca_conway.git)  
+    git clone https://github.com/dein-username/ca_conway.git  
     cd ca_conway
     ```
 
@@ -74,14 +74,14 @@ Um dieses Projekt auszuführen, benötigen Sie **Ruby** und die **Gosu-Bibliothe
 
 -----
 
-### **Steuerung während der Simulation** 
+### **Steuerung während der Simulation** <a id="steuerung-während-der-simulation"></a>
 
 * **Mausklick:** Klicken Sie auf eine Zelle, um ihren Zustand (`lebendig` / `tot`) umzuschalten.
 * **ESC-Taste:** Beendet die Anwendung.
 
 -----
 
-### **Referenzen**
+### **Referenzen** <a id="referenzen"></a>
 
   * [Conways Spiel des Lebens (Wikipedia)](https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens)
   * [Ruby-Programmiersprache](https://www.ruby-lang.org/)
